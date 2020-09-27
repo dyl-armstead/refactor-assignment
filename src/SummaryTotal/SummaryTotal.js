@@ -18,7 +18,7 @@ class SummaryTotal extends Component {
                 <h2>Your cart</h2>
                 <SummaryOptions
                 features={this.props.features}
-                current={this.state.selected}
+                current={this.props.current}
                 />
                 <div className="summary__total">
                     <div className="summary__total__label">Total</div>

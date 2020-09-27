@@ -21,7 +21,7 @@ class SummaryOptions extends Component {
               </div>
             );
           });
-        return {summary}
+        return summary
     }
 }
 

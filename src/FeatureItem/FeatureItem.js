@@ -8,7 +8,7 @@ class FeatureItem extends Component {
             currency: 'USD'
           });
         const {features, current, feature} = this.props;
-        const {options} = features[feature].map(item => {
+        const options = features[feature].map(item => {
             const itemHash = slugify(JSON.stringify(item));
             return (
             <div key={itemHash} className="feature__item">
@@ -26,7 +26,7 @@ class FeatureItem extends Component {
             </div>
             );
             });
-        return {options}
+        return options
     }
 }
 

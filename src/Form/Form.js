@@ -7,9 +7,9 @@ class Form extends Component {
             <form className="main__form">
                 <h2>Customize your laptop</h2>
                 <Feature
-                updateFeature={(feature, newValue) => this.updateFeature(feature, newValue)}
+                updateFeature= {this.props.updateFeature}
                 features={this.props.features}
-                current={this.state.selected}
+                current={this.props.current}
                 />
             </form>
         )

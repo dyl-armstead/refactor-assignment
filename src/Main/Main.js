@@ -8,13 +8,13 @@ class Main extends Component {
         return (
             <main>
                 <Form 
-                updateFeature={(feature, newValue) => this.updateFeature(feature, newValue)}
+                updateFeature= {this.props.updateFeature}
                 features={this.props.features}
-                current={this.state.selected}
+                current={this.props.current}
                 />
                 <SummaryTotal 
                 features={this.props.features}
-                current={this.state.selected}
+                current={this.props.current}
                 />
             </main>
         )
