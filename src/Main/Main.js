@@ -21,9 +21,5 @@ class Main extends Component {
     }
 }
 
-Main.defaultProps = {
-    features: []
-};
-
 export default Main;
 //Form, Feature, FeatureItem, SummaryOptions, SummaryTotal inside of Main

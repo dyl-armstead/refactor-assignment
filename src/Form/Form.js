@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Feature from '../Feature/Feature';
 
+
 class Form extends Component {
     render(){
         return (
@@ -15,10 +16,6 @@ class Form extends Component {
         )
     }
 }
-
-Form.defaultProps = {
-    features: []
-};
 
 export default Form;
     //Feature and FeatureItem inside of Form

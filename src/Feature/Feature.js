@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import FeatureItem from '../FeatureItem/FeatureItem.js'
 
+
 class Feature extends Component {
     render(){
-        const {features, current} = this.props;
+        const {current} = this.props;
         const featuresOutput = Object.keys(current).map((feature, idx) => {
             const featureHash = feature + '-' + idx;
             return (
@@ -23,11 +24,6 @@ class Feature extends Component {
         return featuresOutput
     }
 }
-
-Feature.defaultProps = {
-    features: []
-
-};
 
 export default Feature;
 //FeatureItem inside of Feature

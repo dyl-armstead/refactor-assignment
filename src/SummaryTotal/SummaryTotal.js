@@ -31,10 +31,6 @@ class SummaryTotal extends Component {
     }
 }
 
-SummaryTotal.defaultProps = {
-    features: []
-};
-
 export default SummaryTotal
 
 

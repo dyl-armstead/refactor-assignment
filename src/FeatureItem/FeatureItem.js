@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import slugify from 'slugify';
 
+
 class FeatureItem extends Component {
     render() {
         const USCurrencyFormat = new Intl.NumberFormat('en-US', {
@@ -17,7 +18,7 @@ class FeatureItem extends Component {
                 id={itemHash}
                 className="feature__option"
                 name={slugify(feature)}
-                checked={item === current[feature].name}
+                checked={item.name === current[feature].name}
                 onChange={e => this.props.updateFeature(feature, item)}
                 />
                 <label htmlFor={itemHash} className="feature__label">
@@ -29,9 +30,5 @@ class FeatureItem extends Component {
         return options
     }
 }
-
-FeatureItem.defaultProps = {
-    features: []
-};
 
 export default FeatureItem
